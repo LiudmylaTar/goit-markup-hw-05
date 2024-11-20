@@ -95,8 +95,7 @@
               <h3 class="benefits-subtitel">Diligence</h3>
               <p class="benefits-text">
                 Research and confirm brands that present the strongest digital
-                growth opportunities andbackground: #f4f4fd;background: #f4f4fd;
-                minimize risk.
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="benefits-item">
@@ -481,7 +480,90 @@
             </li>
           </ul>
         </div>
+        <form class="email-form">
+          <label class="email-label">
+            Subscribe
+            <input class="form-input-foter" type="text" name="email_address" placeholder="E-mail">
+             </label>
+             <button class="btn-subscribe" type="submit">
+              Subscribe  
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+        </form>
       </div>
     </footer>
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button class="modal-button-exit" type="button">
+          <svg class="modal-icon-exit" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <form class="back-form">
+          <fieldset class="back-info">
+            <legend class="legend-form">Leave your contacts and we will call you back</legend>
+          <div class="form-wrapper">
+           <label class="form-label">
+            Name
+            <div class="input-container">
+            <input class="form-input" type="text" name="username" required/>
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          </label>
+          <label class="form-label">
+            Phone
+            <div class="input-container">
+            <input class="form-input" type="tel" name="contact_tel" required />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            </div>
+          </label>
+          <label class="form-label">
+            Email
+            <div class="input-container">
+            <input class="form-input" type="email" name="email" />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            </div>
+          </label>
+          <label class="form-label">
+            Comment
+          <textarea class="textarea-input" name="comment" rows="5" placeholder="Text input"></textarea>
+          </label>
+          </div>
+          </fieldset>
+       
+         <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              type="checkbox"
+            />
+            <label class="checkbox-label" for="user-privacy">
+              <span class="checkbox-span">
+                <svg class="galka" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="checkbox-linlk" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    </div>
   </body>
 </html>
