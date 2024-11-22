@@ -673,7 +673,7 @@ img {
 .textarea-input:focus {
   border-color: #4d5ae5;
 }
-.modal-icon:focus {
+.form-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 .modal-icon {
@@ -717,6 +717,16 @@ input[type="checkbox"]:checked + label .checkbox-span {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .btn-submit {
   display: block;
